@@ -1,0 +1,8 @@
+{
+    "require": {
+        "leocavalcante/siler": "dev-master",
+        "gabordemooij/redbean": "dev-master",
+        "twig/twig": "^2.6",
+        "webonyx/graphql-php": "^0.13.0"
+    }
+}

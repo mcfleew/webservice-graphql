@@ -1,0 +1,28 @@
+type Client {
+  id: Int
+  guid: ID
+  first: String
+  last: String
+  city: String
+  street: String
+  zip: String
+}
+
+type Query {
+  findAllClients(page: Int): [Client] 
+  findSomeClients(search: String, field: String, page: Int): [Client]
+}
+
+type Mutation {
+  update(guid: String, field: String, value: String): Client
+  delete(guid: String): Client
+}
+
+fragment Data on Client {
+  guid
+  first
+  last
+  city
+  street
+  zip
+}
